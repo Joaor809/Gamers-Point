@@ -1,0 +1,22 @@
+body {
+    color: #ffffff;
+    background: linear-gradient(180deg, #0f172a 0%, #1e3a8a 50%, #3b82f6 100%);
+    font-family: 'Poppins', sans-serif;
+    padding: 15px;
+}
+
+.navbar {
+    background-color: #1f1f25;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: #ffffff !important;
+    transition: transform 0.3s ease-in-out;
+}
+.navbar-brand:hover{
+    transform: scale(1.05);
+}
+.card{
+    background: transparent !important;
+}

@@ -1,0 +1,25 @@
+.card {
+    border-radius: 2rem;
+    background-color: #1a1a1f;
+    color: white;
+}
+.modal-content {
+    background-color: #223a7e;
+    color: #fff;
+}
+.modal-title,
+.form-label,
+p {
+    color: #fff;
+}
+a {
+    text-decoration: none;
+    color: #007bff;
+    cursor: pointer;
+}
+a:hover {
+    text-decoration: underline;
+}
+body{
+    background-image: linear-gradient(to top right, #0a113d, #233a7e);
+}

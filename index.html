@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamer's Point</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="icon" href="imagens/logo.png">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+    body {
+        color: white;
+        background: linear-gradient(180deg, #0f172a 0%, #1e3a8a 50%, #3b82f6 100%);
+    }
+
+    #botao_compra {
+        background: linear-gradient(90deg, #26fe96, #5eff6c);
+    }
+    #descont{
+        background: linear-gradient(90deg, #c22121, rgb(134, 27, 27));
+    }
+    .card{
+        background-color: #0f172a;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="imagens/logo.png" alt="Logo" style="width: 4rem;">
+            </a>
+            <div class="dropdown ms-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <i class="bi bi-person-circle"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="login.html">Entrar</a></li>
+                    <li><a class="dropdown-item" href="login.html">Cadastrar-se</a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row g-3">
+            <div class="col-lg-8 col-md-12">
+                <div class="card text-white h-100 border-0" style="background-color: transparent !important;">
+                    <img src="imagens/arc_raiders.jpg" class="card-img img-fluid" alt="Promoção Relâmpago">
+
+                    <div class="card-img-overlay d-flex flex-column justify-content-end p-3 p-md-4">
+                        <h5 class="fw-bold text-wrap">
+                            Se não aproveitar o desconto agora, vai ARCar com as consequências...
+                        </h5>
+
+                        <div class="d-flex align-items-center mt-3 gap-3 flex-wrap">
+                            <span class="btn btn-sm text-white fs-6 fw-bold" id="descont">
+                                <strong>-20%</strong>
+                            </span>
+
+                            <a href="html/compra.html" class="btn" id="botao_compra">
+                                <strong><i class="bi bi-cart-plus"></i> R$136,49</strong>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 d-flex flex-column gap-3">
+                <div class="card bg-dark text-white">
+                    <img src="imagens/battlefield6.jpg" class="card-img img-fluid" alt="Battlefield 6">
+                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                        <h6 class="fw-bold mb-3">A série foi boa, mas o jogo é melhor ainda...</h6>
+
+                        <div class="d-flex align-items-center gap-3">
+                            <span class="btn btn-sm text-white fs-6 fw-bold" id="descont"><strong>-6%</strong></span>
+                            <a href="html/compra.html" class="btn" id="botao_compra">
+                                <strong><i class="bi bi-cart-plus"></i> R$279,00</strong>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-dark text-white">
+                    <img src="imagens/batman.jpg" class="card-img img-fluid" alt="Batman Arkham">
+                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                        <h6 class="fw-bold mb-3">NANANANANANA... BATMAN</h6>
+
+                        <div class="d-flex align-items-center gap-3">
+                            <span class="btn btn-sm text-white fs-6 fw-bold" id="descont"><strong>-3%</strong></span>
+                            <a href="html/compra.html" class="btn" id="botao_compra">
+                                <strong><i class="bi bi-cart-plus"></i> R$27,99</strong>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main class="conteudo my-5">
+        <h2 style="margin-top: 4rem;" class="text-center justify-content-center" id="titulo1">Treinador, sua jornada te chama!</h2>
+        <h4 class="text-center justify-content-center" style="margin-bottom: 2rem;" id="titulo1">Capture sua oferta lendária e garanta seu Pokémon favorito antes
+            que
+            desapareça!</h4>
+        <div class="container my-4">
+            <div class="row row-cols-2 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card h-100 text-white">
+                        <img onclick="abrirViolet()" class="card-img-top img-fluid d-block mx-auto"
+                            src="imagens/pokemon_violet.jpg" alt="Pokémon Violet">
+
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title"><strong>Pokémon™: Violet</strong></h3>
+                            <p class="card-text"><strong>Nintendo Switch</strong></p>
+
+                            <div class="mt-auto compra">
+                                <button class="btn btn-sm text-white fs-6 fw-bold" id="descont">-3%</button>
+                                <a href="html/compra.html" class="btn" id="botao_pokemon">
+                                    <strong><i class="bi bi-cart-plus"></i> R$337,00</strong>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 text-white">
+                        <img onclick="abrirModal()" class="card-img-top img-fluid d-block mx-auto"
+                            src="imagens/pokemon_scarlet.jpg" alt="Pokémon Scarlet">
+
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title"><strong>Pokémon™: Scarlet</strong></h3>
+                            <p class="card-text"><strong>Nintendo Switch</strong></p>
+
+                            <div class="mt-auto compra">
+                                <button class="btn btn-sm text-white fs-6 fw-bold" id="descont">-3%</button>
+                                <a href="html/compra.html" class="btn" id="botao_pokemon">
+                                    <strong><i class="bi bi-cart-plus"></i> R$337,00</strong>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 text-white">
+                        <img onclick="abrirModal()" class="card-img-top img-fluid d-block mx-auto"
+                            src="imagens/pokemon_arceus.jpg" alt="Pokémon Legends Arceus">
+
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title"><strong>Pokémon™: Legends Arceus</strong></h3>
+                            <p class="card-text"><strong>Nintendo Switch</strong></p>
+
+                            <div class="mt-auto compra">
+                                <button class="btn btn-sm text-white fs-6 fw-bold" id="descont">-3%</button>
+                                <a href="html/compra.html" class="btn" id="botao_pokemon">
+                                    <strong><i class="bi bi-cart-plus"></i> R$337,00</strong>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 text-white">
+                        <img onclick="abrirModal()" class="card-img-top img-fluid d-block mx-auto"
+                            src="imagens/pokemon_sword.jpg" alt="Pokémon Sword">
+
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title"><strong>Pokémon™: Sword</strong></h3>
+                            <p class="card-text"><strong>Nintendo Switch</strong></p>
+
+                            <div class="mt-auto compra">
+                                <button class="btn btn-sm text-white fs-6 fw-bold" id="descont">-3%</button>
+                                <a href="html/compra.html" class="btn" id="botao_pokemon">
+                                    <strong><i class="bi bi-cart-plus"></i> R$337,00</strong>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        </div>
+        <div class="container">
+            <h2 style="margin-top: 4rem;" id="titulo2">Jogos por menos de 100zão</h2>
+            <h4 id="titulo2">Amigo, se você parcelar em 6x SEM JUROS tu nem sente!</h4>
+            <div class="container my-4">
+                <div class="row row-cols-2 row-cols-md-4 g-4">
+                    <div class="col">
+                        <div class="card h-100 text-white">
+                            <img onclick="abrirModal()" class="card-img-top img-fluid d-block mx-auto"
+                                src="imagens/little_nightmares.jpg" alt="Little Nightmares">
+
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title"><strong>Little Nightmares</strong></h3>
+                                <p class="card-text"><strong>Windows</strong></p>
+
+                                <div class="d-grid gap-2 col-10 mx-auto aling-items-center">
+                                    <a href="html/compra.html" class="btn mt-5" id="botao_compra">
+                                        <strong><i class="bi bi-cart-plus"></i> R$84,90</strong>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-white">
+                            <img onclick="abrirModal()" class="card-img-top img-fluid d-block mx-auto"
+                                src="imagens/gta.jpg" alt="Grand Theft Auto V - Enhanced">
+
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title"><strong>Grand Theft Auto V - Enhanced</strong></h3>
+                                <p class="card-text"><strong>Windows</strong></p>
+
+                                <div class="d-grid gap-2 col-10 mx-auto aling-items-center">
+                                    <a href="html/compra.html" class="btn" id="botao_compra">
+                                        <strong><i class="bi bi-cart-plus"></i> R$84,90</strong>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-white">
+                            <img onclick="abrirModal()" class="card-img-top img-fluid d-block mx-auto"
+                                src="imagens/rematch.jpg" alt="Rematch">
+
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title"><strong>Rematch</strong></h3>
+                                <p class="card-text"><strong>Windows</strong></p>
+                                <div class="d-grid gap-2 col-10 mx-auto aling-items-center">
+                                    <a href="html/compra.html" class="btn mt-5" id="botao_compra">
+                                        <strong><i class="bi bi-cart-plus"></i> R$84,90</strong>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-white">
+                            <img onclick="abrirModal()" class="card-img-top img-fluid d-block mx-auto"
+                                src="imagens/silent_hill.jpg" alt="Silent Hill: Homecoming">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title"><strong>Silent Hill: Homecoming</strong></h3>
+                                <p class="card-text"><strong>Windows</strong></p>
+
+                                <div class="mt-auto compra">
+                                    <div class="d-grid gap-2 col-10 mx-auto aling-items-center">
+                                        <a href="html/compra.html" class="btn" id="botao_compra">
+                                            <strong><i class="bi bi-cart-plus"></i> R$34,99</strong>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <h2 style="margin-top: 4rem;" id="titulo2">Bem-vindo ao Multiverso dos Descontos da Warner!</h2>
+                <h4 id="titulo2">Heróis, bruxos, hobbits e mestres construtores, todos têm um joguinho baratinho te
+                    esperando!</h4>
+                <div class="container my-4">
+                    <div class="row row-cols-2 row-cols-md-4 g-4">
+                        <div class="col">
+                            <div class="card h-100 text-white">
+                                <img onclick="abrirModal()" class="card-img-top img-fluid d-block mx-auto"
+                                    src="imagens/batman.jpg" alt="Batman Arkham Collection">
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title"><strong>Batman Arkham Collection</strong></h3>
+                                    <p class="card-text"><strong>Windows</strong></p>
+                                    <div class="mt-auto compra">
+                                        <button class="btn btn-sm text-white fs-6 fw-bold" id="descont">-95%</button>
+                                        <a href="html/compra.html" class="btn" id="botao_compra">
+                                            <strong><i class="bi bi-cart-plus"></i> R$27,99</strong>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 text-white">
+                                <img onclick="abrirModal()" class="card-img-top img-fluid d-block mx-auto"
+                                    src="imagens/injustice2.png" alt="Injustice 2 - Legendary Edition">
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title"><strong>Injustice 2 - Legendary Edition</strong></h3>
+                                    <p class="card-text"><strong>Windows</strong></p>
+
+                                    <div class="mt-auto compra">
+                                        <button class="btn btn-sm text-white fs-6 fw-bold" id="descont">-85%</button>
+                                        <a href="html/compra.html" class="btn" id="botao_compra">
+                                            <strong><i class="bi bi-cart-plus"></i> R$41,99</strong>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 text-white">
+                                <img onclick="abrirModal()" class="card-img-top img-fluid d-block mx-auto"
+                                    src="imagens/suicide_squad.jpg" alt="Suicide Squad: Kill the Justice League">
+
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title"><strong>Suicide Squad: Kill the Justice League</strong></h3>
+                                    <p class="card-text"><strong>Windows</strong></p>
+
+                                    <div class="mt-auto compra">
+                                        <button class="btn btn-sm text-white fs-6 fw-bold" id="descont">-95%</button>
+                                        <a href="html/compra.html" class="btn" id="botao_compra">
+                                            <strong><i class="bi bi-cart-plus"></i> R$13,49</strong>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 text-white">
+                                <img onclick="abrirModal()" class="card-img-top img-fluid d-block mx-auto"
+                                    src="imagens/lego_dc.jpg" alt="Lego DC Super Villains">
+
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title"><strong>Lego DC Super Villains</strong></h3>
+                                    <p class="card-text"><strong>Windows</strong></p>
+
+                                    <div class="mt-auto compra">
+                                        <button class="btn btn-sm text-white fs-6 fw-bold" id="descont">-85%</button>
+                                        <a href="html/compra.html" class="btn" id="botao_compra">
+                                            <strong><i class="bi bi-cart-plus"></i> R$26,99</strong>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 style="margin-top: 4rem;" id="titulo2">SEEEEEEGAAAAAAAAA</h2>
+                <h4 id="titulo2">Descontaços da MELHOR PUBLISHER de 2024 segundo o Metacritic</h4>
+                <div class="container my-4">
+                    <div class="row row-cols-2 row-cols-md-4 g-4">
+                        <div class="col">
+                            <div class="card h-100 text-white">
+                                <img onclick="abrirModal()" class="card-img-top img-fluid d-block mx-auto"
+                                    src="imagens/metaphor.jpg" alt="Metaphot: ReFantazio">
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title"><strong>Metaphot: ReFantazio</strong></h3>
+                                    <p class="card-text"><strong>Windows</strong></p>
+                                    <div class="mt-auto compra">
+                                        <button class="btn btn-sm text-white fs-6 fw-bold" id="descont">-45%</button>
+                                        <a href="html/compra.html" class="btn" id="botao_compra">
+                                            <strong><i class="bi bi-cart-plus"></i> R$164,94</strong>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 text-white">
+                                <img onclick="abrirModal()" class="card-img-top img-fluid d-block mx-auto"
+                                    src="imagens/yakuza.jpg" alt="Yakuza: Like a Dragon">
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title"><strong>Yakuza: Like a Dragon</strong></h3>
+                                    <p class="card-text"><strong>Windows</strong></p>
+
+                                    <div class="mt-auto compra">
+                                        <button class="btn btn-sm text-white fs-6 fw-bold" id="descont">-60%</button>
+                                        <a href="html/compra.html" class="btn" id="botao_compra">
+                                            <strong><i class="bi bi-cart-plus"></i> R$39,96</strong>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 text-white">
+                                <img onclick="abrirModal()" class="card-img-top img-fluid d-block mx-auto"
+                                    src="imagens/like_dragon.jpg" alt="Like a Dragon: Infinite Wealth">
+
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title"><strong>Like a Dragon: Infinite Wealth</strong></h3>
+                                    <p class="card-text"><strong>Windows</strong></p>
+
+                                    <div class="mt-auto compra">
+                                        <button class="btn btn-sm text-white fs-6 fw-bold" id="descont">-90%</button>
+                                        <a href="html/compra.html" class="btn" id="botao_compra">
+                                            <strong><i class="bi bi-cart-plus"></i> R$27,99</strong>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 text-white">
+                                <img onclick="abrirModal()" class="card-img-top img-fluid d-block mx-auto"
+                                    src="imagens/judgement.jpg" alt="Judgment">
+
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title"><strong>Judgment</strong></h3>
+                                    <p class="card-text"><strong>Windows</strong></p>
+
+                                    <div class="mt-auto compra">
+                                        <button class="btn btn-sm text-white fs-6 fw-bold" id="descont">-90%</button>
+                                        <a href="html/compra.html" class="btn" id="botao_compra">
+                                            <strong><i class="bi bi-cart-plus"></i> R$27,99</strong>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <h2 class="mt-5" id="titulo2">Os Mais Populares</h2>
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <div class="col">
+                            <div class="card bg-dark text-white p-3 fs-6 fw-bold">
+                                <div class="row g-3">
+                                    <div class="col-4">
+                                        <img src="imagens/arc_raiders.jpg" class="img-fluid rounded"
+                                            style="height: 150px; width: 100%; object-fit: cover;">
+                                    </div>
+                                    <div class="col-8">
+                                        <h5><strong>ARC Raiders</strong></h5>
+                                        <p class="mb-3"><strong>Steam</strong></p>
+                                        <span class="btn btn-sm text-white fs-6 fw-bold" id="descont">-20%</span>
+                                        <a href="html/compra.html" class="btn fs-6 fw-bold" id="botao_compra">
+                                            <i class="bi bi-cart-plus"></i> R$136,49
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-dark text-white p-3">
+                                <div class="row g-3">
+                                    <div class="col-4">
+                                        <img src="imagens/assassin_s.jpg" class="img-fluid rounded"
+                                            style="height: 150px; width: 100%; object-fit: cover;">
+                                    </div>
+                                    <div class="col-8">
+                                        <h5><strong>Assassin's Creed IV Black Flag - New Gold Edition</strong></h5>
+                                        <p class="mb-3"><strong>Ubisoft Connect</strong></p>
+                                        <span class="btn btn-sm text-white fs-6 fw-bold" id="descont">-70%</span>
+                                        <a href="html/compra.html" class="btn fs-6 fw-bold" id="botao_compra">
+                                            <i class="bi bi-cart-plus"></i> R$35,99
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-dark text-white p-3">
+                                <div class="row g-3">
+                                    <div class="col-4">
+                                        <img src="imagens/mk1.jpg" class="img-fluid rounded"
+                                            style="height: 150px; width: 100%; object-fit: cover;">
+                                    </div>
+                                    <div class="col-8">
+                                        <h5><strong>Mortal Kombat 1</strong></h5>
+                                        <p class="mb-3"><strong>Steam</strong></p>
+                                        <a href="html/compra.html" class="btn fs-6 fw-bold" id="botao_compra">
+                                            <i class="bi bi-cart-plus"></i> R$229,99
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-dark text-white p-3">
+                                <div class="row g-3">
+                                    <div class="col-4">
+                                        <img src="imagens/peak.jpg" class="img-fluid rounded"
+                                            style="height: 150px; width: 100%; object-fit: cover;">
+                                    </div>
+                                    <div class="col-8">
+                                        <h5><strong>PEAK</strong></h5>
+                                        <p class="mb-3"><strong>Steam</strong></p>
+                                        <span class="btn btn-sm text-white fs-6 fw-bold" id="descont">-38%</span>
+                                        <a href="html/compra.html" class="btn fs-6 fw-bold" id="botao_compra">
+                                            <i class="bi bi-cart-plus"></i> R$14,87
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-dark text-white p-3">
+                                <div class="row g-3">
+                                    <div class="col-4">
+                                        <img src="imagens/resident_requiem.jpg" class="img-fluid rounded"
+                                            style="height: 150px; width: 100%; object-fit: cover;">
+                                    </div>
+                                    <div class="col-8">
+                                        <h5><strong>Resident Evil Requiem - Deluxe Edition</strong></h5>
+                                        <p class="mb-3"><strong>Steam</strong></p>
+                                        <span class="btn btn-sm text-white fs-6 fw-bold" id="descont">-18%</span>
+                                        <a href="html/compra.html" class="btn fs-6 fw-bold" id="botao_compra">
+                                            <i class="bi bi-cart-plus"></i> R$285,99
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-dark text-white p-3">
+                                <div class="row g-3">
+                                    <div class="col-4">
+                                        <img src="imagens/wildfrost.png" class="img-fluid rounded"
+                                            style="height: 150px; width: 100%; object-fit: cover;">
+                                    </div>
+                                    <div class="col-8">
+                                        <h5><strong>Wildfrost</strong></h5>
+                                        <p class="mb-3"><strong>Steam</strong></p>
+                                        <span class="btn btn-sm text-white fs-6 fw-bold" id="descont">-40%</span>
+                                        <a href="html/compra.html" class="btn fs-6 fw-bold" id="botao_compra">
+                                            <i class="bi bi-cart-plus"></i> R$35,98
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-dark text-white text-center py-3 mt-auto w-100">
+        <p>© 2025 Gamer’s Point — Todos os direitos reservados.</p>
+        <div class="suporte">
+            <p class="text-white">Precisa de ajuda?<a style="text-decoration: none !important;"
+                    href="html/suporte.html">
+                    Acesse o suporte</a>
+            </p>
+            <a style="text-decoration: none !important;" href="#">contato@gamerspoint.com</a>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>

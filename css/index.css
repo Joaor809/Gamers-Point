@@ -1,0 +1,406 @@
+body {
+    color: #ffffff;
+    background: linear-gradient(180deg, #0f172a 0%, #1e3a8a 50%, #3b82f6 100%);
+    font-family: 'Poppins', sans-serif;
+    padding: 15px;
+}
+
+.navbar {
+    background-color: #1f1f25;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: #ffffff !important;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.05);
+}
+
+#pokemon_card {
+    margin width: 18.4rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: #1a1a1f;
+    border-radius: 0.5rem;
+}
+
+.categorias {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    grid-auto-rows: 1fr;
+    padding: 10px;
+}
+
+.categorias img {
+    width: 90%;
+    height: 100px;
+    border-radius: 10px;
+    transition: transform 0.6s ease-in-out;
+}
+
+.categorias img:hover {
+    transform: scale(1.1);
+}
+
+#card-text {
+    width: 18.6rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    margin-bottom: auto;
+    background-color: #264A73;
+}
+
+#botao_compra {
+    background: linear-gradient(90deg, #26fe96, #5eff6c);
+    width: 14rem;
+    border-radius: 8px;
+}
+
+.col {
+    transform: none !important;
+}
+
+#console {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #233a7e;
+    border-radius: 5px;
+    width: 4rem;
+    font-size: 12px;
+    margin-right: 9rem;
+}
+
+.nintendoeshop {
+    background-color: #E60012;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    height: 2rem;
+    width: 16.3rem !important;
+}
+
+#pokemon h3 {
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+#descont {
+    background: linear-gradient(90deg, #ff2475, #f26d09);
+}
+
+.desconto {
+    background: linear-gradient(90deg, #ff2475, #f26d09);
+}
+
+.compra {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.col img {
+    width: 18.4rem;
+}
+
+.steam {
+    background-color: #264A73;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    height: 2rem;
+    width: 16.4rem !important;
+}
+
+#cemzão img {
+    width: 20rem;
+}
+
+#arc h4,
+h6 {
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    text-shadow: 2px 2px 6px black;
+}
+
+#arc h4 {
+    margin-right: 24rem;
+}
+
+#arc h6 {
+    margin-right: 7.5rem;
+}
+
+.compra1 {
+    margin-right: 32rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+#botao_compra2 {
+    background: linear-gradient(90deg, #26fe96, #5eff6c);
+    width: 10rem;
+    border-radius: 8px;
+}
+
+.compra3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 2rem;
+}
+
+.card:hover {
+    transform: none !important;
+    transition: none !important;
+}
+
+#titulo1,
+#titulo2 {
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.pokemon {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: whitesmoke;
+    background-color: #1a1a1f;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.compra_pokemon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-right: 4rem;
+}
+
+#pokemon_title {
+    margin-top: 1rem;
+}
+
+#cemzão {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: whitesmoke;
+    background-color: #1a1a1f;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+#compra_cemzão {
+    background: linear-gradient(90deg, #26fe96, #5eff6c);
+    width: 14rem;
+    border-radius: 8px;
+    margin: 1rem;
+}
+
+#cemzão_title {
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+#botao_pokemon {
+    background: linear-gradient(90deg, #26fe96, #5eff6c);
+    width: 12rem;
+    border-radius: 8px;
+}
+
+#console_cemzão {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #233a7e;
+    border-radius: 5px;
+    width: 4rem;
+    font-size: 12px;
+    margin-right: 9rem;
+}
+
+#warner_card {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: whitesmoke;
+    background-color: #1a1a1f;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+#compra_warner {
+    background: linear-gradient(90deg, #26fe96, #5eff6c);
+    width: 14rem;
+    border-radius: 8px;
+    margin: 1rem;
+}
+
+#warner_title {
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+#botao_warner {
+    background: linear-gradient(90deg, #26fe96, #5eff6c);
+    width: 12rem;
+    border-radius: 8px;
+}
+
+#console_warner {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #233a7e;
+    border-radius: 5px;
+    width: 4rem;
+    font-size: 12px;
+    margin-right: 9rem;
+}
+
+#sega_card {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: whitesmoke;
+    background-color: #1a1a1f;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+#compra_sega {
+    background: linear-gradient(90deg, #26fe96, #5eff6c);
+    width: 14rem;
+    border-radius: 8px;
+    margin: 1rem;
+}
+
+#sega_title {
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+#botao_sega {
+    background: linear-gradient(90deg, #26fe96, #5eff6c);
+    width: 12rem;
+    border-radius: 8px;
+}
+
+#console_sega {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #233a7e;
+    border-radius: 5px;
+    width: 4rem;
+    font-size: 12px;
+    margin-right: 9rem;
+}
+
+footer {
+    background-color: #111;
+    color: #ccc;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    border-top: 1px solid #333;
+}
+
+.card {
+    background-color: #1a1a1f;
+}
+
+#button_100 {
+    background: linear-gradient(90deg, #26fe96, #5eff6c);
+}
+
+.loja {
+    padding-bottom: 20px;
+}
+
+.lojas {
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(135deg, #101010, #1b1b1b);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.lojas img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+    filter: brightness(0.9);
+    transition: 0.3s ease;
+}
+
+.link:hover .lojas {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.65);
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+.link:hover img {
+    filter: brightness(1);
+    transform: scale(1.08);
+}
+
+#list {
+    background: linear-gradient(90deg, #101010, #1b1b1b, #0f172a, #1e3a8a);
+}
+#navigation{
+    text-shadow: 0 2px 4px gray;
+    transition: transform 0.5s ease-in-out;
+}
+#navigation:hover{
+    transform: scale(1.1);
+    color: #000000;
+}
+#modalViolet{
+    text-align: center;
+    justify-content: center;
+    border-radius: 16px;
+    border:none;
+    background: #091d75;
+    color: white;
+}
+#modalViolet h2{
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#modalViolet p{
+    font: 12pt Arial;
+}
