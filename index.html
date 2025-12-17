@@ -22,10 +22,12 @@
     #botao_compra {
         background: linear-gradient(90deg, #26fe96, #5eff6c);
     }
-    #descont{
+
+    #descont {
         background: linear-gradient(90deg, #c22121, rgb(134, 27, 27));
     }
-    .card{
+
+    .card {
         background-color: #0f172a;
     }
 </style>
@@ -78,7 +80,8 @@
                 <div class="card bg-dark text-white">
                     <img src="imagens/battlefield6.jpg" class="card-img img-fluid" alt="Battlefield 6">
                     <div class="card-img-overlay d-flex flex-column justify-content-end">
-                        <h6 class="fw-bold mb-3">Combates mais intensos, mapas grandiosos e a guerra elevada a um novo patamar.</h6>
+                        <h6 class="fw-bold mb-3">Combates mais intensos, mapas grandiosos e a guerra elevada a um novo
+                            patamar.</h6>
 
                         <div class="d-flex align-items-center gap-3">
                             <span class="btn btn-sm text-white fs-6 fw-bold" id="descont"><strong>-6%</strong></span>
@@ -105,8 +108,10 @@
         </div>
     </div>
     <main class="conteudo my-5">
-        <h2 style="margin-top: 4rem;" class="text-center justify-content-center" id="titulo1">Treinador, sua jornada te chama!</h2>
-        <h4 class="text-center justify-content-center" style="margin-bottom: 2rem;" id="titulo1">Capture sua oferta lendária e garanta seu Pokémon favorito antes
+        <h2 style="margin-top: 4rem;" class="text-center justify-content-center" id="titulo1">Treinador, sua jornada te
+            chama!</h2>
+        <h4 class="text-center justify-content-center" style="margin-bottom: 2rem;" id="titulo1">Capture sua oferta
+            lendária e garanta seu Pokémon favorito antes
             que
             desapareça!</h4>
         <div class="container my-4">
@@ -537,7 +542,42 @@
                     href="html/suporte.html">
                     Acesse o suporte</a>
             </p>
-            <a style="text-decoration: none !important;" href="#">contato@gamerspoint.com</a>
+            <a href="#" style="text-decoration: none !important;" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasContato" aria-controls="offcanvasContato">contato@gamerspoint.com</a>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasContato"
+                aria-labelledby="offcanvasContatoLabel">
+
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasContatoLabel">
+                        Entre em contato
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <p>
+                        Precisa de ajuda ou tem alguma dúvida?
+                        Fale com a equipe da <strong>Gamer’s Point</strong>.
+                    </p>
+
+                    <ul class="list-group list-group-flush mt-3">
+                        <li class="list-group-item bg-transparent text-white">
+                            <i class="bi bi-envelope-fill me-2"></i>
+                            contato@gamerspoint.com
+                        </li>
+                        <li class="list-group-item bg-transparent text-white">
+                            <i class="bi bi-clock-fill me-2"></i>
+                            Atendimento: Seg a Sex — 08h às 18h
+                        </li>
+                        <li class="list-group-item bg-transparent text-white">
+                            <i class="bi bi-whatsapp me-2"></i>
+                            WhatsApp: (11) 99999-9999
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
     </footer>
 </body>
